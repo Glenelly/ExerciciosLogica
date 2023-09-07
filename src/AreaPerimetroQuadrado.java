@@ -18,6 +18,4 @@ public class AreaPerimetroQuadrado {
         System.out.println("A área do quadrado é: " + area);
 
     }
-
-
 }

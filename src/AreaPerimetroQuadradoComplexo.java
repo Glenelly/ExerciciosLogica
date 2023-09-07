@@ -10,7 +10,7 @@ public class AreaPerimetroQuadradoComplexo {
         Scanner scan = new Scanner(System.in);
 
         System.out.println("Informe o lado do quadrado: ");
-        BigDecimal lado = new BigDecimal(scan.nextInt());
+        BigDecimal lado = BigDecimal.valueOf(scan.nextDouble());
 
         BigDecimal perimetro = lado.add(lado).multiply(BigDecimal.valueOf(2));
         BigDecimal area = lado.multiply(lado);
