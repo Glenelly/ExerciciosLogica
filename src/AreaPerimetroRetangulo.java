@@ -1,9 +1,9 @@
 import java.util.Scanner;
-
 public class AreaPerimetroRetangulo {
-    public static void main(String[] args) {
 
-        /* Dado o tamanho da base e da altura de um retângulo, calcular a sua área e o seu perímetro. */
+    /* Dado o tamanho da base e da altura de um retângulo, calcular a sua área e o seu perímetro. */
+
+    public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);
 
@@ -18,5 +18,6 @@ public class AreaPerimetroRetangulo {
 
         System.out.println("O perímetro do retângulo é: " + perimetro);
         System.out.println("A área do retângulo é: " + area);
+
     }
 }
