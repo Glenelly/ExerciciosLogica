@@ -14,11 +14,20 @@ public class AreaPerimetroQuadradoComplexo {
         System.out.println("Informe o lado do quadrado: ");
         BigDecimal lado = BigDecimal.valueOf(scan.nextDouble());
 
+        retornarPerimetro(lado);
+
+        retornarArea(lado);
+    }
+
+    public static void retornarPerimetro(BigDecimal lado){
+
         BigDecimal perimetro = lado.add(lado).multiply(BigDecimal.valueOf(2));
-        BigDecimal area = lado.multiply(lado);
-
         System.out.println("O perímetro do quadrado é: " + perimetro);
-        System.out.println("A área do quadrado é: " + area);
+    }
 
+    public static void retornarArea(BigDecimal lado){
+
+        BigDecimal area = lado.multiply(lado);
+        System.out.println("A área do quadrado é: " + area);
     }
 }

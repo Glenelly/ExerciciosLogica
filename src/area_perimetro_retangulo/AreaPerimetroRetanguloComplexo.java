@@ -15,11 +15,18 @@ public class AreaPerimetroRetanguloComplexo {
         System.out.println("Informe a altura do retângulo: ");
         BigDecimal altura = BigDecimal.valueOf(scan.nextDouble());
 
+        retornarPerimetro(base, altura);
+
+        retornarArea(base, altura);
+    }
+    public static void retornarPerimetro(BigDecimal base, BigDecimal altura){
+
         BigDecimal perimetro = base.add(altura).multiply(BigDecimal.valueOf(2));
-        BigDecimal area = base.multiply(altura);
-
         System.out.println("O perímetro do retângulo é: " + perimetro);
-        System.out.println("A área do retângulo é: " + area);
+    }
+    public static void retornarArea(BigDecimal base, BigDecimal altura){
 
+        BigDecimal area = base.multiply(altura);
+        System.out.println("A área do retângulo é: " + area);
     }
 }

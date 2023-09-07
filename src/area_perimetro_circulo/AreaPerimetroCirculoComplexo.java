@@ -13,11 +13,21 @@ public class AreaPerimetroCirculoComplexo {
         System.out.println("Informe o raio da circunferência: ");
         BigDecimal raio = BigDecimal.valueOf(scan.nextDouble());
 
-        BigDecimal perimetro = BigDecimal.valueOf(2).multiply(BigDecimal.valueOf(Math.PI)).multiply(raio);
-        BigDecimal area = BigDecimal.valueOf(Math.PI).multiply(raio).multiply(raio);
+        retornarPerimetro(raio);
 
-        System.out.println("A área do círculo é: " + area);
-        System.out.println("O perímetro do círculo é: " + perimetro);
-
+        retornarArea(raio);
     }
+
+    public static void retornarPerimetro(BigDecimal raio){
+
+        BigDecimal perimetro = BigDecimal.valueOf(2).multiply(BigDecimal.valueOf(Math.PI)).multiply(raio);
+        System.out.println("O perímetro do círculo é: " + perimetro);
+    }
+
+    public static void retornarArea(BigDecimal raio){
+
+        BigDecimal area = BigDecimal.valueOf(Math.PI).multiply(raio).multiply(raio);
+        System.out.println("A área do círculo é: " + area);
+    }
+
 }
