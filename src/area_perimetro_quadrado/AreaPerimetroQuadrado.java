@@ -1,7 +1,8 @@
-import java.math.BigDecimal;
+package area_perimetro_quadrado;
+
 import java.util.Scanner;
 
-public class AreaPerimetroQuadradoComplexo {
+public class AreaPerimetroQuadrado {
 
     /*Dado o tamanho do lado de um quadrado, calcular a área e o perímetro do mesmo.*/
 
@@ -10,10 +11,10 @@ public class AreaPerimetroQuadradoComplexo {
         Scanner scan = new Scanner(System.in);
 
         System.out.println("Informe o lado do quadrado: ");
-        BigDecimal lado = BigDecimal.valueOf(scan.nextDouble());
+        int lado = scan.nextInt();
 
-        BigDecimal perimetro = lado.add(lado).multiply(BigDecimal.valueOf(2));
-        BigDecimal area = lado.multiply(lado);
+        int perimetro = (lado + lado) * 2;
+        int area = lado * lado;
 
         System.out.println("O perímetro do quadrado é: " + perimetro);
         System.out.println("A área do quadrado é: " + area);

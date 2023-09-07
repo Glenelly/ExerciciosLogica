@@ -1,3 +1,5 @@
+package area_perimetro_retangulo;
+
 import java.util.Scanner;
 public class AreaPerimetroRetangulo {
 
