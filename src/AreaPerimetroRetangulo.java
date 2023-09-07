@@ -13,7 +13,7 @@ public class AreaPerimetroRetangulo {
         System.out.println("Informe a altura do retângulo: ");
         int altura = scan.nextInt();
 
-        int perimetro = base + altura;
+        int perimetro = (base + altura) * 2;
         int area = base * altura;
 
         System.out.println("O perímetro do retângulo é: " + perimetro);
