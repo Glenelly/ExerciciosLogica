@@ -3,7 +3,7 @@ package area_perimetro_circulo;
 import java.math.BigDecimal;
 import java.util.Scanner;
 
-public class AreaPerimetroCirculoComplexo {
+public class AreaPerimetroCirculo2 {
 
     /*Dado o tamanho do raio de uma circunferência, calcular a área e o perímetro da mesma.*/
     public static void main(String[] args) {
@@ -17,13 +17,11 @@ public class AreaPerimetroCirculoComplexo {
 
         retornarArea(raio);
     }
-
     public static void retornarPerimetro(BigDecimal raio){
 
         BigDecimal perimetro = BigDecimal.valueOf(2).multiply(BigDecimal.valueOf(Math.PI)).multiply(raio);
         System.out.println("O perímetro do círculo é: " + perimetro);
     }
-
     public static void retornarArea(BigDecimal raio){
 
         BigDecimal area = BigDecimal.valueOf(Math.PI).multiply(raio).multiply(raio);

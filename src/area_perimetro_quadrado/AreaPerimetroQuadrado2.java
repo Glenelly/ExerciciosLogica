@@ -3,7 +3,7 @@ package area_perimetro_quadrado;
 import java.math.BigDecimal;
 import java.util.Scanner;
 
-public class AreaPerimetroQuadradoComplexo {
+public class AreaPerimetroQuadrado2 {
 
     /*Dado o tamanho do lado de um quadrado, calcular a área e o perímetro do mesmo.*/
 

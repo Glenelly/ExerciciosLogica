@@ -3,7 +3,7 @@ package area_perimetro_retangulo;
 import java.math.BigDecimal;
 import java.util.Scanner;
 
-public class AreaPerimetroRetanguloComplexo {
+public class AreaPerimetroRetangulo2 {
 
     /* Dado o tamanho da base e da altura de um retângulo, calcular a sua área e o seu perímetro. */
     public static void main(String[] args) {
