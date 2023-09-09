@@ -15,15 +15,15 @@ public class FahrenheitToCelcios2 {
 
     public static void converterEscalas(){
 
-            Scanner scan = new Scanner(System.in);
+        Scanner scan = new Scanner(System.in);
 
-            System.out.println("Informe a temperatura em fahrenheit:");
-            BigDecimal fahrenheit = BigDecimal.valueOf(scan.nextDouble());
+        System.out.println("Informe a temperatura em fahrenheit:");
+        BigDecimal fahrenheit = BigDecimal.valueOf(scan.nextDouble());
 
-            BigDecimal conversao = fahrenheit.subtract(BigDecimal.valueOf(32))
-                    .divide(BigDecimal.valueOf(1.8), 3, RoundingMode.HALF_UP);
+        BigDecimal conversao = fahrenheit.subtract(BigDecimal.valueOf(32))
+                .divide(BigDecimal.valueOf(1.8), 3, RoundingMode.HALF_UP);
 
-            System.out.println("A temperatura em celsius é de: " + conversao);
+        System.out.println("A temperatura em celsius é de: " + conversao);
 
     }
 }
